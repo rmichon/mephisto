@@ -1,0 +1,9 @@
+#!/bin/bash  
+
+cd utility
+rm -rf mep-tmp #in case...
+cp -r mephisto mep-tmp
+cd mep-tmp
+ino build
+ino upload
+rm -rf ../mep-tmp
